@@ -1,0 +1,71 @@
+/* Body met lucht-naar-zand gradient */
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #f0e68c);
+    color: #003d5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Input, button en response max breedte en styling */
+#response, input, button {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+
+/* Input veld met lichte zandkleur */
+#input {
+    padding: 0.75rem 1rem;
+    border: 2px solid #f4d35e;
+    background-color: #fff8dc;
+    color: #003d5b;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#input:focus {
+    border-color: #ee964b;
+    background-color: #fffcea;
+}
+
+/* Button in helder zeeblauw met zandkleur hover */
+#submit {
+    padding: 0.75rem 1rem;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #f4d35e;
+    color: #003d5b;
+}
+
+/* Response box met lichte zandkleur achtergrond */
+#response {
+    min-height: 100px;
+    padding: 1rem;
+    background-color: #fff8dc;
+    border: 2px solid #f4d35e;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+/* Optionele titel styling */
+h1 {
+    color: #ee964b;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
